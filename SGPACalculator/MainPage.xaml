@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SGPACalculator.MainPage"
+             BackgroundColor="#3D0C02">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Margin="20,35,20,20"
+            Spacing="20"
+            VerticalOptions="Center">
+
+            <Label Text="Government College Of Engineering, Chhatrapati Sambhajinagr" 
+                   HorizontalOptions="Center"
+                   TextColor="White"
+                   FontSize="30"
+                   TextDecorations="Underline" />
+
+            <Label Text="SGPA Calculator"
+                   HorizontalOptions="Center"
+                   TextColor="#00008B"
+                   FontSize="40"
+                   FontAttributes="Bold" />
+
+            <!-- Grade Inputs -->
+            <Entry x:Name="Grade1" Placeholder="Enter Adv Java Grade" PlaceholderColor="#93917C" TextColor="White" Keyboard="Text" />
+            <Entry x:Name="Grade2" Placeholder="Enter ASP.NET Grade" PlaceholderColor="#93917C" TextColor="White" Keyboard="Text" />
+            <Entry x:Name="Grade3" Placeholder="Enter Cloud Computing Grade" PlaceholderColor="#93917C" TextColor="White" Keyboard="Text" />
+            <Entry x:Name="Grade4" Placeholder="Enter E-Gov Grade" PlaceholderColor="#93917C" TextColor="White" Keyboard="Text" />
+            <Entry x:Name="Grade5" Placeholder="Enter MT Grade" PlaceholderColor="#93917C" TextColor="White" Keyboard="Text" />
+            <Entry x:Name="Grade6" Placeholder="Enter Adv. Java Practical Grade" PlaceholderColor="#93917C" TextColor="White" Keyboard="Text" />
+            <Entry x:Name="Grade7" Placeholder="Enter ASP.NET Practical Grade" PlaceholderColor="#93917C" TextColor="White" Keyboard="Text" />
+            <Entry x:Name="Grade8" Placeholder="Enter CC Practical Grade" PlaceholderColor="#93917C" TextColor="White" Keyboard="Text" />
+            <Entry x:Name="Grade9" Placeholder="Enter Project Grade" PlaceholderColor="#93917C" TextColor="White" Keyboard="Text" />
+
+            <!-- Calculate SGPA Button -->
+            <Button Text="Calculate SGPA"
+                    BackgroundColor="#571B7E"
+                    TextColor="White"
+                    FontSize="30"
+                    Clicked="CalculateSGPA_Clicked" />
+
+            <!-- SGPA Result -->
+            <Label x:Name="SGPAResult" Text="" TextColor="#87CEEB" FontSize="30" HorizontalOptions="Center" />
+
+            <!-- Semester SGPA Inputs -->
+            <Entry x:Name="Sem1SGPA" Placeholder="Enter Sem I SGPA" PlaceholderColor="#93917C" TextColor="White" Keyboard="Numeric" />
+            <Entry x:Name="Sem2SGPA" Placeholder="Enter Sem II SGPA" PlaceholderColor="#93917C" TextColor="White" Keyboard="Numeric" />
+
+            <!-- Calculate CGPA Button -->
+            <Button Text="Calculate CGPA"
+                    BackgroundColor="#571B7E"
+                    TextColor="White"
+                    FontSize="30"
+                    Clicked="CalculateCGPA_Clicked" />
+
+            <!-- CGPA Result -->
+            <Label x:Name="CGPAResult" Text="" TextColor="#87CEEB" FontSize="30" HorizontalOptions="Center" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
